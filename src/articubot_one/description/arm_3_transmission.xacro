@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+
+    <xacro:macro name="arm_3_transmission" params="">
+        <joint name="arm_3_joint">
+        <command_interface name="position">
+            <param name="min">-2.88</param>
+            <param name="max">2.88</param>
+        </command_interface>
+        <state_interface name="position" />
+        <state_interface name="velocity" />
+        </joint>
+    </xacro:macro>
+</robot>
